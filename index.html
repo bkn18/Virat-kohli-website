@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Kohli - The Legend</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section with Background Image -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">KING</h1>
+            <p class="hero-subtitle">VIRAT KOHLI</p>
+            <button class="cta-button" id="knowMoreBtn">Know More About King</button>
+        </div>
+    </section>
+
+    <!-- Basic Info Section -->
+    <section class="basic-info-section" id="basicInfoSection">
+        <div class="container">
+            <div class="basic-info-content">
+                <h2 class="info-title">About The King</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">Full Name</span>
+                        <span class="info-value">Virat Kohli</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Born</span>
+                        <span class="info-value">November 5, 1988</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Place</span>
+                        <span class="info-value">Delhi, India</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Role</span>
+                        <span class="info-value">Right-handed Batsman</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Teams</span>
+                        <span class="info-value">India, RCB</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Nickname</span>
+                        <span class="info-value">King Kohli, Chiku</span>
+                    </div>
+                </div>
+                <p class="info-description">
+                    Virat Kohli is one of the greatest cricketers of all time, known for his aggressive batting style, 
+                    exceptional consistency, and leadership qualities. He has broken numerous records and is considered 
+                    one of the best batsmen in modern cricket history. His dedication, passion, and never-give-up attitude 
+                    have made him an inspiration to millions of cricket fans worldwide.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section" id="categoriesSection">
+        <div class="container">
+            <h2 class="section-title">Explore The Legend</h2>
+            <div class="categories-grid">
+                <!-- Family Category -->
+                <div class="category-card" data-category="family">
+                    <div class="card-icon">👨‍👩‍👧</div>
+                    <h3>Family</h3>
+                    <p>Discover the personal life and family of King Kohli</p>
+                    <span class="card-arrow">→</span>
+                </div>
+
+                <!-- IPL Records Category -->
+                <div class="category-card" data-category="ipl">
+                    <div class="card-icon">🏏</div>
+                    <h3>IPL Records</h3>
+                    <p>Outstanding achievements in Indian Premier League</p>
+                    <span class="card-arrow">→</span>
+                </div>
+
+                <!-- International Records Category -->
+                <div class="category-card" data-category="international">
+                    <div class="card-icon">🌍</div>
+                    <h3>International Records</h3>
+                    <p>Legendary records on the international stage</p>
+                    <span class="card-arrow">→</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Details Modal -->
+    <div class="modal" id="familyModal">
+        <div class="modal-content family-modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Family</h2>
+            
+            <!-- Family Photos Gallery -->
+            <div class="family-photos">
+                <h3 class="photos-title">Family Moments</h3>
+                <div class="photos-grid">
+                    <div class="photo-item">
+                        <div class="photo-placeholder family-photo-1">
+                            <span class="photo-label">With Parents</span>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <div class="photo-placeholder family-photo-2">
+                            <span class="photo-label">With Anushka</span>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <div class="photo-placeholder family-photo-3">
+                            <span class="photo-label">With Children</span>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <div class="photo-placeholder family-photo-4">
+                            <span class="photo-label">Family Together</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <div class="family-member-card" data-member="prem">
+                    <div class="member-header">
+                        <div class="member-icon">👨</div>
+                        <div class="member-info">
+                            <h3>Prem Kohli</h3>
+                            <p class="member-relation">Father</p>
+                        </div>
+                        <button class="info-btn" data-target="prem">ℹ️ More Info</button>
+                    </div>
+                </div>
+
+                <div class="family-member-card" data-member="saroj">
+                    <div class="member-header">
+                        <div class="member-icon">👩</div>
+                        <div class="member-info">
+                            <h3>Saroj Kohli</h3>
+                            <p class="member-relation">Mother</p>
+                        </div>
+                        <button class="info-btn" data-target="saroj">ℹ️ More Info</button>
+                    </div>
+                </div>
+
+                <div class="family-member-card" data-member="bhawna">
+                    <div class="member-header">
+                        <div class="member-icon">👧</div>
+                        <div class="member-info">
+                            <h3>Bhawna Kohli</h3>
+                            <p class="member-relation">Elder Sister</p>
+                        </div>
+                        <button class="info-btn" data-target="bhawna">ℹ️ More Info</button>
+                    </div>
+                </div>
+
+                <div class="family-member-card" data-member="vikash">
+                    <div class="member-header">
+                        <div class="member-icon">👨</div>
+                        <div class="member-info">
+                            <h3>Vikash Kohli</h3>
+                            <p class="member-relation">Elder Brother</p>
+                        </div>
+                        <button class="info-btn" data-target="vikash">ℹ️ More Info</button>
+                    </div>
+                </div>
+
+                <div class="family-member-card" data-member="anushka">
+                    <div class="member-header">
+                        <div class="member-icon">💑</div>
+                        <div class="member-info">
+                            <h3>Anushka Sharma</h3>
+                            <p class="member-relation">Wife</p>
+                        </div>
+                        <button class="info-btn" data-target="anushka">ℹ️ More Info</button>
+                    </div>
+                </div>
+
+                <div class="family-member-card" data-member="vamika">
+                    <div class="member-header">
+                        <div class="member-icon">👶</div>
+                        <div class="member-info">
+                            <h3>Vamika Kohli</h3>
+                            <p class="member-relation">Daughter</p>
+                        </div>
+                        <button class="info-btn" data-target="vamika">ℹ️ More Info</button>
+                    </div>
+                </div>
+
+                <div class="family-member-card" data-member="akaay">
+                    <div class="member-header">
+                        <div class="member-icon">👶</div>
+                        <div class="member-info">
+                            <h3>Akaay Kohli</h3>
+                            <p class="member-relation">Son</p>
+                        </div>
+                        <button class="info-btn" data-target="akaay">ℹ️ More Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Family Member Detail Modal -->
+    <div class="modal detail-modal" id="memberDetailModal">
+        <div class="modal-content detail-modal-content">
+            <span class="close-btn detail-close">&times;</span>
+            <div id="memberDetailContent"></div>
+        </div>
+    </div>
+
+    <!-- IPL Records Modal -->
+    <div class="modal" id="iplModal">
+        <div class="modal-content ipl-modal-content">
+            <div class="modal-background-overlay"></div>
+            <span class="close-btn">&times;</span>
+            <h2>IPL Records</h2>
+            <div class="modal-body">
+                <div class="record-card">
+                    <h3>📊 Career Statistics</h3>
+                    <p class="record-number">7,263+ runs</p>
+                    <p>Virat Kohli is the leading run-scorer in IPL history with over 7,263 runs across 18 seasons. His remarkable consistency and ability to perform under pressure have made him one of the most successful batsmen in the tournament's history.</p>
+                    <p><strong>Matches:</strong> 237+ | <strong>Innings:</strong> 229+ | <strong>Average:</strong> 37.25</p>
+                    <p><strong>Strike Rate:</strong> 130.02 | <strong>Highest Score:</strong> 113</p>
+                    <p><strong>50+ Scores:</strong> 50+ | <strong>30+ Scores:</strong> 100+</p>
+                    <p>His strike rate of 130.02 demonstrates his ability to score quickly while maintaining consistency, making him a valuable asset in the T20 format.</p>
+                </div>
+                <div class="record-card">
+                    <h3>💯 Centuries & Half-Centuries</h3>
+                    <p class="record-number">8 Centuries | 50+ Half-Centuries</p>
+                    <p>Virat Kohli holds the record for most centuries in IPL history with 8 centuries. His ability to convert starts into big scores has been a hallmark of his IPL career, making him the most reliable batsman for RCB.</p>
+                    <p><strong>Centuries:</strong> 8 (Most in IPL history)</p>
+                    <p><strong>Notable Centuries:</strong> 113 vs KXIP (2016), 109 vs GL (2016), 108* vs RPS (2016)</p>
+                    <p><strong>100+ Scores:</strong> 8 times | <strong>50+ Scores:</strong> 50+ times</p>
+                    <p>His consistency is evident from scoring 50+ runs more than 50 times, showcasing his ability to contribute significantly in almost every other match.</p>
+                </div>
+                <div class="record-card">
+                    <h3>⭐ Highest Scores</h3>
+                    <p class="record-number">113</p>
+                    <p>vs Kings XI Punjab, 2016 (50 balls, 12 fours, 8 sixes)</p>
+                    <p><strong>Other Notable:</strong> 109 vs GL (55 balls), 108* vs RPS (58 balls), 100* vs KKR (58 balls)</p>
+                    <p><strong>Fastest 50:</strong> 26 balls | <strong>Fastest 100:</strong> 50 balls</p>
+                </div>
+                <div class="record-card">
+                    <h3>🏆 Season Records</h3>
+                    <p class="record-number">2016 - Record Breaking</p>
+                    <p><strong>2016 Season:</strong> 973 runs (Most in a single IPL season)</p>
+                    <p><strong>Orange Cap Winner:</strong> 2016 (973 runs, 4 centuries, 7 fifties)</p>
+                    <p><strong>2018 Season:</strong> 530 runs | <strong>2019 Season:</strong> 464 runs</p>
+                    <p><strong>2023 Season:</strong> 639 runs | <strong>2024 Season:</strong> 741 runs</p>
+                </div>
+                <div class="record-card">
+                    <h3>👑 Royal Challengers Bangalore</h3>
+                    <p class="record-number">2008-Present</p>
+                    <p><strong>Longest-serving player:</strong> 17 seasons with RCB</p>
+                    <p><strong>Captain:</strong> 2013-2021 (Led RCB to 3 IPL finals)</p>
+                    <p><strong>Franchise Records:</strong> Most runs, most centuries, most 50+ scores</p>
+                    <p><strong>Icon Player:</strong> Face of RCB franchise</p>
+                </div>
+                <div class="record-card">
+                    <h3>🌟 Milestones & Achievements</h3>
+                    <p class="record-number">Multiple Records</p>
+                    <p>First player to score 7,000+ runs in IPL</p>
+                    <p>Most centuries in IPL history (8)</p>
+                    <p>Most runs in a single IPL season (973 in 2016)</p>
+                    <p>Fastest to 5,000 IPL runs (157 innings)</p>
+                    <p>Fastest to 6,000 IPL runs (187 innings)</p>
+                    <p>Most 50+ scores in IPL history</p>
+                </div>
+                <div class="record-card">
+                    <h3>🎯 Match-Winning Performances</h3>
+                    <p class="record-number">Outstanding</p>
+                    <p><strong>2016 Final:</strong> 54 runs vs SRH (RCB runners-up)</p>
+                    <p><strong>2019:</strong> 100* vs KKR (Match-winning century)</p>
+                    <p><strong>2023:</strong> Multiple match-winning knocks including 82* vs MI</p>
+                    <p><strong>2024:</strong> 92 vs PBKS, 83* vs GT (Match-winning performances)</p>
+                </div>
+                <div class="record-card">
+                    <h3>🏅 Awards & Recognition</h3>
+                    <p class="record-number">Multiple Honors</p>
+                    <p><strong>Orange Cap:</strong> 2016 (973 runs), 2024 (741 runs)</p>
+                    <p><strong>Most Valuable Player:</strong> 2016 season</p>
+                    <p><strong>Player of the Match:</strong> 20+ times</p>
+                    <p><strong>IPL Hall of Fame:</strong> Future inductee</p>
+                </div>
+                <div class="record-card">
+                    <h3>📖 IPL Career Journey (2008-2025)</h3>
+                    <p class="record-number">18 Seasons with RCB</p>
+                    <p><strong>2008:</strong> Acquired for $50,000 after U-19 World Cup. Scored 165 runs in debut season.</p>
+                    <p><strong>2009:</strong> RCB reached final, finished runners-up. Kohli scored crucial runs in semi-final.</p>
+                    <p><strong>2010:</strong> Named vice-captain. RCB reached playoffs, eliminated in semi-final.</p>
+                    <p><strong>2011:</strong> Sole player retained for $1.8 million. Scored 557 runs, second-highest run-scorer. RCB reached final.</p>
+                    <p><strong>2012:</strong> Assumed captaincy mid-season. Scored 364 runs with record 203-run partnership with Gayle.</p>
+                    <p><strong>2013:</strong> Full-time captain. Started with 93* and consecutive half-centuries.</p>
+                    <p><strong>2014:</strong> Retained for ₹12.5 crore. Challenging season with multiple ducks.</p>
+                    <p><strong>2015:</strong> Scored 505 runs. Record 215-run partnership with AB de Villiers. RCB reached playoffs.</p>
+                    <p><strong>2016:</strong> Historic season! 973 runs (record), 4 centuries, Orange Cap, MVP. RCB reached final.</p>
+                    <p><strong>2017:</strong> Missed opening matches due to injury. Scored 308 runs in 10 innings.</p>
+                    <p><strong>2018:</strong> Retained for ₹17 crore (most expensive). Crossed 500 runs for 5th time.</p>
+                    <p><strong>2019:</strong> Scored century, finished with improved performances. 464 runs.</p>
+                    <p><strong>2020:</strong> Helped RCB qualify for playoffs with steady performances.</p>
+                    <p><strong>2021:</strong> First player to play 200 matches for RCB. Surpassed 10,000 T20 runs. Announced captaincy resignation.</p>
+                    <p><strong>2022:</strong> Under Faf du Plessis, faced lean patch but scored crucial 73 in must-win match.</p>
+                    <p><strong>2023:</strong> Scored 639 runs with 5 half-centuries and 2 centuries. Surpassed Gayle's century record.</p>
+                    <p><strong>2024:</strong> Career-best 113* vs Rajasthan. Scored 741 runs, won Orange Cap. RCB reached playoffs.</p>
+                    <p><strong>2025:</strong> Scored 657 runs. Contributed 43 runs in final. Won first IPL title after 18 seasons!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- International Records Modal -->
+    <div class="modal" id="internationalModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>International Records</h2>
+            <p class="modal-subtitle">Select a format to explore detailed records</p>
+            <div class="categories-grid international-categories">
+                <div class="category-card format-card" data-format="t20">
+                    <div class="card-icon">⚡</div>
+                    <h3>T20 International</h3>
+                    <p>Explore T20I records, scores, and milestones</p>
+                    <span class="card-arrow">→</span>
+                </div>
+                <div class="category-card format-card" data-format="odi">
+                    <div class="card-icon">🎯</div>
+                    <h3>ODI Cricket</h3>
+                    <p>Discover ODI records, achievements, and milestones</p>
+                    <span class="card-arrow">→</span>
+                </div>
+                <div class="category-card format-card" data-format="test">
+                    <div class="card-icon">🏏</div>
+                    <h3>Test Cricket</h3>
+                    <p>View Test records, centuries, and career highlights</p>
+                    <span class="card-arrow">→</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- T20 International Modal -->
+    <div class="modal" id="t20Modal">
+        <div class="modal-content t20-modal-content">
+            <div class="modal-background-overlay"></div>
+            <span class="close-btn">&times;</span>
+            <h2>T20 International Records</h2>
+            <div class="modal-body">
+                <div class="record-card">
+                    <h3>📊 Career Statistics</h3>
+                    <p class="record-number">4,188 runs</p>
+                    <p>Virat Kohli has amassed 4,188 runs in T20 International cricket, making him one of the most prolific run-scorers in the format. His exceptional average of 48.70 combined with a strike rate of 137.04 showcases his ability to score consistently while maintaining a high tempo.</p>
+                    <p><strong>Matches:</strong> 125+ | <strong>Innings:</strong> 115+ | <strong>Average:</strong> 48.70</p>
+                    <p><strong>Strike Rate:</strong> 137.04 | <strong>Highest Score:</strong> 122*</p>
+                    <p><strong>Not Outs:</strong> 38+ | <strong>Boundaries:</strong> 369 fours, 124 sixes</p>
+                    <p><strong>Fielding:</strong> 54 catches, 8 run-outs</p>
+                    <p>His fielding prowess is equally impressive with 54 catches and 8 run-outs, demonstrating his all-round contribution to the team's success.</p>
+                </div>
+                <div class="record-card">
+                    <h3>💯 Centuries & Half-Centuries</h3>
+                    <p class="record-number">1 Century | 38 Half-Centuries</p>
+                    <p>While Kohli has scored one century in T20I cricket, his consistency is remarkable with 38 half-centuries. His ability to score 50+ runs in 33% of his innings and 30+ runs in 56% of innings demonstrates exceptional consistency in the shortest format.</p>
+                    <p><strong>Centuries:</strong> 1 (122* vs Afghanistan, Asia Cup 2022)</p>
+                    <p>His only T20I century came against Afghanistan in the 2022 Asia Cup, where he scored an unbeaten 122 runs off just 61 balls, showcasing his ability to accelerate when needed.</p>
+                    <p><strong>50+ Scores:</strong> 39 times | <strong>30+ Scores:</strong> 65+ times</p>
+                    <p><strong>Consistency:</strong> 50+ in 33% of innings | <strong>30+ in 56% of innings</strong></p>
+                    <p>This level of consistency makes him one of the most reliable batsmen in T20I cricket history.</p>
+                </div>
+                <div class="record-card">
+                    <h3>🏆 Major Milestones</h3>
+                    <p class="record-number">First Indian</p>
+                    <p>First Indian to score a century in T20 World Cup (2022)</p>
+                    <p>Fastest to 3,000 T20I runs (in 81 innings)</p>
+                    <p>Most runs in T20 World Cups (1,141 runs)</p>
+                    <p>First Indian to 4,000 T20I runs</p>
+                    <p>Most 50+ scores in T20I history</p>
+                </div>
+                <div class="record-card">
+                    <h3>⭐ Highest Scores</h3>
+                    <p class="record-number">122*</p>
+                    <p>vs Afghanistan, Asia Cup 2022 (61 balls, 12 fours, 6 sixes)</p>
+                    <p><strong>Other Notable:</strong> 94* vs West Indies (2019), 94 vs West Indies (2016)</p>
+                    <p><strong>82* vs Australia (2016), 77* vs England (2021), 73 vs West Indies (2019)</strong></p>
+                    <p><strong>Fastest 50:</strong> 27 balls | <strong>Fastest 100:</strong> 61 balls</p>
+                </div>
+                <div class="record-card">
+                    <h3>👑 World Cup Records</h3>
+                    <p class="record-number">1,141 runs</p>
+                    <p>Most runs in T20 World Cup history (across all editions)</p>
+                    <p><strong>Tournaments:</strong> 7 (2009, 2010, 2012, 2014, 2016, 2022, 2024)</p>
+                    <p><strong>2014:</strong> Player of the Tournament (319 runs)</p>
+                    <p><strong>2016:</strong> Player of the Tournament (273 runs, led to semi-finals)</p>
+                    <p><strong>2022:</strong> 296 runs including first T20I century</p>
+                    <p><strong>2024:</strong> 151 runs, Player of the Tournament, World Cup Winner</p>
+                </div>
+                <div class="record-card">
+                    <h3>🌟 Captaincy Records</h3>
+                    <p class="record-number">30 Wins</p>
+                    <p><strong>Matches as Captain:</strong> 50 | <strong>Win Rate:</strong> 64.58%</p>
+                    <p><strong>Wins:</strong> 30 | <strong>Losses:</strong> 16 | <strong>No Result:</strong> 4</p>
+                    <p>Led India to T20 World Cup semi-finals (2016)</p>
+                    <p>Led India to T20 World Cup final (2014)</p>
+                    <p>Most successful Indian T20I captain</p>
+                </div>
+                <div class="record-card">
+                    <h3>🎯 Fastest Milestones</h3>
+                    <p class="record-number">Multiple World Records</p>
+                    <p>Fastest to 1,000 T20I runs (27 innings) - World Record</p>
+                    <p>Fastest to 2,000 T20I runs (56 innings) - World Record</p>
+                    <p>Fastest to 3,000 T20I runs (81 innings) - World Record</p>
+                    <p>Fastest to 4,000 T20I runs (107 innings) - World Record</p>
+                    <p>First player to reach all these milestones</p>
+                </div>
+                <div class="record-card">
+                    <h3>🏅 Series Performances</h3>
+                    <p class="record-number">Outstanding</p>
+                    <p><strong>vs England 2021:</strong> 231 runs in 3 matches (77*, 73, 80*)</p>
+                    <p><strong>vs West Indies 2019:</strong> 197 runs in 3 matches (94*, 67, 36)</p>
+                    <p><strong>vs Australia 2016:</strong> 199 runs in 3 matches (90*, 59*, 50)</p>
+                    <p><strong>vs South Africa 2022:</strong> 116 runs in 2 matches (51, 65)</p>
+                </div>
+                <div class="record-card">
+                    <h3>⚡ Strike Rate & Power Hitting</h3>
+                    <p class="record-number">137.04 Strike Rate</p>
+                    <p><strong>Overall Strike Rate:</strong> 137.04 (Excellent for anchor role)</p>
+                    <p><strong>Boundaries:</strong> 369 fours, 124 sixes (493 total)</p>
+                    <p><strong>Powerplay Strike Rate:</strong> 140+ | <strong>Death Overs:</strong> 150+</p>
+                    <p><strong>Best Strike Rate in Innings:</strong> 200+ (multiple times)</p>
+                </div>
+                <div class="record-card">
+                    <h3>🌍 Performance by Country</h3>
+                    <p class="record-number">Consistent Globally</p>
+                    <p><strong>vs Australia:</strong> 639 runs (avg 53.25) | <strong>vs England:</strong> 589 runs</p>
+                    <p><strong>vs West Indies:</strong> 518 runs | <strong>vs South Africa:</strong> 420 runs</p>
+                    <p><strong>vs New Zealand:</strong> 385 runs | <strong>vs Pakistan:</strong> 311 runs</p>
+                    <p>Performed consistently across all countries</p>
+                </div>
+                <div class="record-card">
+                    <h3>🏏 Technique & Adaptability</h3>
+                    <p class="record-number">Versatile Batsman</p>
+                    <p><strong>Aggressive Style:</strong> Known for aggressive batting with ability to adapt to situations</p>
+                    <p><strong>Versatility:</strong> Proficient against both pace and spin bowling</p>
+                    <p><strong>Technical Improvement:</strong> Made significant adjustments, especially against fast bowlers</p>
+                    <p><strong>Pressure Player:</strong> Excellent performance under pressure, as seen in 2016 T20 World Cup</p>
+                    <p><strong>Fitness Focus:</strong> Introduced endurance tests as selection criterion for team consistency</p>
+                </div>
+                <div class="record-card">
+                    <h3>👑 2016 T20 World Cup - Man of the Tournament</h3>
+                    <p class="record-number">Outstanding Performance</p>
+                    <p><strong>Runs:</strong> 273 runs in 5 matches</p>
+                    <p><strong>Average:</strong> 136.50 (exceptional)</p>
+                    <p><strong>Award:</strong> Man of the Tournament</p>
+                    <p><strong>Impact:</strong> Led India to semi-finals with match-winning performances</p>
+                    <p>One of the greatest individual T20 World Cup performances in history</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ODI International Modal -->
+    <div class="modal" id="odiModal">
+        <div class="modal-content odi-modal-content">
+            <div class="modal-background-overlay"></div>
+            <span class="close-btn">&times;</span>
+            <h2>ODI International Records</h2>
+            <div class="modal-body">
+                <div class="record-card">
+                    <h3>📊 Career Statistics</h3>
+                    <p class="record-number">13,848 runs</p>
+                    <p>Virat Kohli has scored 13,848 runs in ODI cricket, making him one of the greatest ODI batsmen of all time. His exceptional average of 58.67 is among the highest for batsmen with over 10,000 runs, demonstrating his remarkable consistency and ability to score big runs.</p>
+                    <p><strong>Matches:</strong> 292 | <strong>Innings:</strong> 279 | <strong>Average:</strong> 58.67</p>
+                    <p><strong>Strike Rate:</strong> 93.58 | <strong>Highest Score:</strong> 183</p>
+                    <p>His strike rate of 93.58 combined with such a high average showcases his ability to score quickly while maintaining consistency, making him one of the most complete ODI batsmen in history.</p>
+                </div>
+                <div class="record-card">
+                    <h3>💯 Centuries & Half-Centuries</h3>
+                    <p class="record-number">50 Centuries | 72 Half-Centuries</p>
+                    <p>Virat Kohli has scored 50 centuries in ODI cricket, the second most in the history of the format. His ability to convert starts into centuries has been exceptional, with 50+ scores in 122 innings, demonstrating remarkable consistency at the highest level.</p>
+                    <p><strong>Centuries:</strong> 50 (Second most in ODI history)</p>
+                    <p>Only Sachin Tendulkar has scored more ODI centuries (49), making Kohli one of the greatest century-makers in ODI cricket history.</p>
+                    <p><strong>50+ Scores:</strong> 122 times | <strong>100+ Scores:</strong> 50 times</p>
+                    <p>His conversion rate and consistency make him one of the most reliable batsmen in ODI cricket, with a 50+ score in nearly 44% of his innings.</p>
+                </div>
+                <div class="record-card">
+                    <h3>🏆 World Records</h3>
+                    <p class="record-number">Multiple World Records</p>
+                    <p>Fastest to 8,000 ODI runs (175 innings)</p>
+                    <p>Fastest to 9,000 ODI runs (194 innings)</p>
+                    <p>Fastest to 10,000 ODI runs (205 innings)</p>
+                    <p>Fastest to 11,000 ODI runs (222 innings)</p>
+                    <p>Fastest to 12,000 ODI runs (242 innings)</p>
+                    <p>Fastest to 13,000 ODI runs (267 innings)</p>
+                </div>
+                <div class="record-card">
+                    <h3>⭐ Highest Scores</h3>
+                    <p class="record-number">183</p>
+                    <p>vs Pakistan, Asia Cup 2012 (148 balls, 22 fours, 1 six)</p>
+                    <p><strong>Other Notable:</strong> 160* vs South Africa, 157* vs West Indies, 154* vs New Zealand</p>
+                </div>
+                <div class="record-card">
+                    <h3>👑 World Cup Records</h3>
+                    <p class="record-number">1,795 runs</p>
+                    <p>Most runs in a single World Cup edition (2019 - 765 runs)</p>
+                    <p><strong>Tournaments:</strong> 3 (2011, 2015, 2019)</p>
+                    <p><strong>2011:</strong> Part of World Cup winning team</p>
+                    <p><strong>2019:</strong> Highest run-scorer (765 runs)</p>
+                </div>
+                <div class="record-card">
+                    <h3>🌟 Captaincy Records</h3>
+                    <p class="record-number">65 Wins</p>
+                    <p><strong>Matches as Captain:</strong> 95 | <strong>Win Rate:</strong> 70.43%</p>
+                    <p>Led India to 2017 Champions Trophy final</p>
+                    <p>Led India to 2019 World Cup semi-finals</p>
+                </div>
+                <div class="record-card">
+                    <h3>🎯 Consistency Records</h3>
+                    <p class="record-number">Unmatched</p>
+                    <p>Most consecutive ODI centuries (5 in 2018) - World Record</p>
+                    <p>Most ODI centuries in a calendar year (6 in 2017, 6 in 2018)</p>
+                    <p>Highest average among batsmen with 10,000+ runs (58.67)</p>
+                    <p>50+ scores in 43.7% of innings</p>
+                </div>
+                <div class="record-card">
+                    <h3>🏅 Series Performances</h3>
+                    <p class="record-number">Outstanding</p>
+                    <p><strong>vs South Africa 2018:</strong> 558 runs in 6 matches (3 centuries)</p>
+                    <p><strong>vs West Indies 2018:</strong> 453 runs in 5 matches (2 centuries)</p>
+                    <p><strong>vs Australia 2013:</strong> 383 runs in 7 matches (1 century)</p>
+                    <p><strong>vs England 2018:</strong> 459 runs in 3 matches (2 centuries)</p>
+                </div>
+                <div class="record-card">
+                    <h3>⚡ Fastest Milestones</h3>
+                    <p class="record-number">All World Records</p>
+                    <p>Fastest to 5,000 ODI runs (114 innings)</p>
+                    <p>Fastest to 6,000 ODI runs (136 innings)</p>
+                    <p>Fastest to 7,000 ODI runs (161 innings)</p>
+                    <p>Fastest to 8,000 ODI runs (175 innings) - World Record</p>
+                    <p>Fastest to 9,000 ODI runs (194 innings) - World Record</p>
+                    <p>Fastest to 10,000 ODI runs (205 innings) - World Record</p>
+                    <p>Fastest to 11,000 ODI runs (222 innings) - World Record</p>
+                    <p>Fastest to 12,000 ODI runs (242 innings) - World Record</p>
+                    <p>Fastest to 13,000 ODI runs (267 innings) - World Record</p>
+                </div>
+                <div class="record-card">
+                    <h3>🌍 Performance by Country</h3>
+                    <p class="record-number">Consistent Globally</p>
+                    <p><strong>vs West Indies:</strong> 2,269 runs (avg 56.72) | <strong>vs Sri Lanka:</strong> 1,999 runs</p>
+                    <p><strong>vs Australia:</strong> 1,888 runs | <strong>vs South Africa:</strong> 1,503 runs</p>
+                    <p><strong>vs England:</strong> 1,298 runs | <strong>vs New Zealand:</strong> 1,275 runs</p>
+                    <p>Performed consistently across all countries and conditions</p>
+                </div>
+                <div class="record-card">
+                    <h3>📈 Year-by-Year Consistency</h3>
+                    <p class="record-number">Remarkable Consistency</p>
+                    <p><strong>2008:</strong> Started with 31.80 average in 5 matches</p>
+                    <p><strong>2009-2023:</strong> 12 years with average above 45</p>
+                    <p><strong>8 Years:</strong> Average above 50.00 (exceptional consistency)</p>
+                    <p><strong>2022:</strong> Only notable dip in career, but bounced back strongly in 2023</p>
+                    <p><strong>2011:</strong> Top run-scorer in World Cup winning year</p>
+                    <p><strong>Last Decade:</strong> Leading ODI run-scorer of the decade</p>
+                    <p><strong>Chasing Average:</strong> Astronomical - one of the best chasers in cricket history</p>
+                    <p>Rarely had lean patches, demonstrating remarkable consistency throughout his ODI career</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Test Cricket Modal -->
+    <div class="modal" id="testModal">
+        <div class="modal-content test-modal-content">
+            <div class="modal-background-overlay"></div>
+            <span class="close-btn">&times;</span>
+            <h2>Test Cricket Records</h2>
+            <div class="modal-body">
+                <div class="record-card">
+                    <h3>📊 Career Statistics</h3>
+                    <p class="record-number">9,230 runs</p>
+                    <p>Virat Kohli scored 9,230 runs in Test cricket over a 14-year career spanning from 2011 to 2025. His average of 46.85 reflects his ability to adapt to the longest format while maintaining his aggressive approach, with a strike rate of 55.23 that kept the scoreboard ticking.</p>
+                    <p><strong>Matches:</strong> 123 | <strong>Innings:</strong> 197 | <strong>Average:</strong> 46.85</p>
+                    <p><strong>Strike Rate:</strong> 55.23 | <strong>Highest Score:</strong> 254*</p>
+                    <p><strong>Career Span:</strong> 14 years (2011-2025)</p>
+                    <p>His highest score of 254* against South Africa in 2019 stands as a testament to his ability to play long innings and score big runs in Test cricket.</p>
+                </div>
+                <div class="record-card">
+                    <h3>💯 Centuries & Half-Centuries</h3>
+                    <p class="record-number">30 Centuries | 31 Half-Centuries</p>
+                    <p>Virat Kohli scored 30 centuries in Test cricket, placing him 7th on the all-time list. His 31 half-centuries combined with 30 centuries show his ability to consistently convert starts into substantial scores, making him one of India's greatest Test batsmen.</p>
+                    <p><strong>Centuries:</strong> 30 (7th most in Test history)</p>
+                    <p>His 30 Test centuries place him among the elite group of batsmen who have scored 30 or more Test centuries, a testament to his skill and consistency in the longest format.</p>
+                    <p><strong>50+ Scores:</strong> 61 times | <strong>100+ Scores:</strong> 30 times</p>
+                    <p>With 50+ scores in 61 innings, Kohli demonstrated remarkable consistency, scoring a half-century or more in nearly 31% of his Test innings.</p>
+                </div>
+                <div class="record-card">
+                    <h3>🏆 Major Milestones</h3>
+                    <p class="record-number">Fastest Indian</p>
+                    <p>Fastest Indian to 7,000 Test runs (138 innings)</p>
+                    <p>Fastest Indian to 8,000 Test runs (169 innings)</p>
+                    <p>Most Test centuries as Indian captain (20)</p>
+                </div>
+                <div class="record-card">
+                    <h3>⭐ Highest Scores</h3>
+                    <p class="record-number">254*</p>
+                    <p>vs South Africa, Pune 2019 (336 balls, 33 fours, 2 sixes)</p>
+                    <p><strong>Other Notable:</strong> 243 vs Sri Lanka, 235 vs England, 200 vs West Indies</p>
+                </div>
+                <div class="record-card">
+                    <h3>👑 Captaincy Records</h3>
+                    <p class="record-number">40 Wins</p>
+                    <p><strong>Matches as Captain:</strong> 68 | <strong>Win Rate:</strong> 58.82%</p>
+                    <p>Most successful Indian Test captain</p>
+                    <p>Led India to first Test series win in Australia (2018-19)</p>
+                    <p>Led India to Test series wins in England and South Africa</p>
+                </div>
+                <div class="record-card">
+                    <h3>🌟 Series Performances</h3>
+                    <p class="record-number">Outstanding</p>
+                    <p><strong>Australia 2014-15:</strong> 692 runs in 4 Tests</p>
+                    <p><strong>England 2018:</strong> 593 runs in 5 Tests</p>
+                    <p><strong>South Africa 2018:</strong> 286 runs in 3 Tests</p>
+                    <p><strong>West Indies 2019:</strong> 251 runs in 2 Tests</p>
+                </div>
+                <div class="record-card">
+                    <h3>🎯 Double Centuries</h3>
+                    <p class="record-number">7 Double Centuries</p>
+                    <p>254* vs South Africa (2019), 243 vs Sri Lanka (2017), 235 vs England (2016)</p>
+                    <p>211 vs New Zealand (2016), 200 vs West Indies (2019), 204 vs Bangladesh (2017), 200 vs South Africa (2013)</p>
+                    <p>Most double centuries by an Indian captain (7)</p>
+                    <p>Second most double centuries by an Indian (after Virender Sehwag)</p>
+                </div>
+                <div class="record-card">
+                    <h3>🏅 Awards & Recognition</h3>
+                    <p class="record-number">Multiple Honors</p>
+                    <p><strong>ICC Test Player of the Year:</strong> 2018</p>
+                    <p><strong>Sir Garfield Sobers Trophy:</strong> 2018 (ICC Cricketer of the Year)</p>
+                    <p><strong>Player of the Series:</strong> Multiple Test series</p>
+                    <p><strong>Man of the Match:</strong> 10+ times in Tests</p>
+                </div>
+                <div class="record-card">
+                    <h3>⚡ Fastest Milestones</h3>
+                    <p class="record-number">Fastest Indian</p>
+                    <p>Fastest Indian to 1,000 Test runs (18 innings)</p>
+                    <p>Fastest Indian to 2,000 Test runs (40 innings)</p>
+                    <p>Fastest Indian to 3,000 Test runs (60 innings)</p>
+                    <p>Fastest Indian to 4,000 Test runs (86 innings)</p>
+                    <p>Fastest Indian to 5,000 Test runs (105 innings)</p>
+                    <p>Fastest Indian to 6,000 Test runs (119 innings)</p>
+                    <p>Fastest Indian to 7,000 Test runs (138 innings)</p>
+                    <p>Fastest Indian to 8,000 Test runs (169 innings)</p>
+                </div>
+                <div class="record-card">
+                    <h3>🌍 Performance by Country</h3>
+                    <p class="record-number">Consistent Globally</p>
+                    <p><strong>vs Australia:</strong> 1,682 runs (avg 48.05) | <strong>vs England:</strong> 1,992 runs</p>
+                    <p><strong>vs South Africa:</strong> 1,236 runs | <strong>vs West Indies:</strong> 898 runs</p>
+                    <p><strong>vs New Zealand:</strong> 773 runs | <strong>vs Sri Lanka:</strong> 1,067 runs</p>
+                    <p>Scored centuries in all major Test-playing nations</p>
+                </div>
+                <div class="record-card">
+                    <h3>🌟 Match-Winning Performances</h3>
+                    <p class="record-number">Outstanding</p>
+                    <p><strong>vs Australia 2014-15:</strong> 692 runs in 4 Tests (4 centuries)</p>
+                    <p><strong>vs England 2018:</strong> 593 runs in 5 Tests (2 centuries)</p>
+                    <p><strong>vs South Africa 2018:</strong> 286 runs in 3 Tests (1 century)</p>
+                    <p><strong>vs West Indies 2019:</strong> 251 runs in 2 Tests (1 double century)</p>
+                    <p>Multiple match-winning and series-defining performances</p>
+                </div>
+                <div class="record-card">
+                    <h3>👋 Test Career Retirement (May 2025)</h3>
+                    <p class="record-number">14-Year Career</p>
+                    <p><strong>Final Statistics:</strong> 9,230 runs in 123 matches at 46.85 average</p>
+                    <p><strong>Centuries:</strong> 30 | <strong>Half-Centuries:</strong> 31</p>
+                    <p><strong>Ranking:</strong> Fourth-highest run-scorer for India in Test cricket</p>
+                    <p><strong>Double Centuries:</strong> 7 (Most by an Indian in Test cricket)</p>
+                    <p><strong>Captaincy Legacy:</strong> Led India to 40 wins in 68 matches (2014-2022)</p>
+                    <p><strong>World Test Championship:</strong> Led India to finals in 2021 and 2023</p>
+                    <p>Retired as India's most successful Test captain with remarkable achievements</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
